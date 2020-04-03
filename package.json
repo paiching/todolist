@@ -1,0 +1,27 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "express-session": "^1.17.0",
+    "handlebars": "^4.5.3",
+    "mongoose": "^5.8.9",
+    "passport": "^0.4.1",
+    "passport-facebook": "^3.0.0",
+    "passport-google": "^0.3.0",
+    "passport-local": "^1.0.0"
+  }
+}

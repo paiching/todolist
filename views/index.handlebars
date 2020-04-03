@@ -1,0 +1,14 @@
+<!-- views/index.handlebars -->
+<a href="/todos/new" class="btn btn-primary mb-3">Create</a>
+ 
+<ul>
+  {{#each objects}}
+
+    <li>
+      {{{name}}}
+      <a href="#">detailf</a>
+      <a href="#">edit</a>
+      <button type="submit">delete</button>
+    </li>
+  {{/each}}
+</ul>
