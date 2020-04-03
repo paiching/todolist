@@ -22,7 +22,7 @@ const port = 3000
 
 // 加上 { useNewUrlParser: true }
 //DATABASE
-mongoose.connect('mongodb://localhost/todo', { useNewUrlParser: true }) 
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/todo', { useNewUrlParser: true }) 
 const db = mongoose.connection
 
 db.on('error', () => {
@@ -133,6 +133,7 @@ app.post('/todos/:id/delete', (req, res) => {
 app.use(express.static('public'))
 
 // start and listen on the Express server
-app.listen(port, () =>{
-    console.log(`Express is listening on http://localhost:${port}`)
+app.listen(process.env.PORT || port, () =>{
+    //console.log(`Express is listening on http://localhost:${port}`)
+    console.log(`app is running!!!`)
 })
